@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: webhook-whatsapp
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python webhook.py
+    plan: free
