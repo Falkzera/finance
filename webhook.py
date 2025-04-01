@@ -2,7 +2,9 @@ from flask import Flask, request
 import pandas as pd
 from datetime import datetime
 import os
-from utils import upload_to_drive  # importa do módulo separado
+from utils.upload_to_drive import upload_to_drive
+
+
 
 app = Flask(__name__)
 ARQUIVO_CSV = "gastos.csv"
